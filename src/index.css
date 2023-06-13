@@ -11,3 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.notifications{
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 150px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+@keyframes fadeOut{
+  from {
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+.notification{
+  height: 50px;
+  width: 95px;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 10px;
+  animation: fadeOut 2s forwards;
+
+}
+
+.added{
+  background-color: green;
+}
+
+.deleted{
+  background-color: red;
+}
